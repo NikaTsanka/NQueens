@@ -5,6 +5,8 @@ public class NQ {
 		// TODO Auto-generated method stub
 		System.out.println("Hi");
 		System.out.println("hello from intellij");
+		
+		//Whats upp?
 
 	}
 
