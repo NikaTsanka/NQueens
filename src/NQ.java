@@ -6,7 +6,6 @@ public class NQ {
 		System.out.println("Hi");
 		System.out.println("hello from intellij");
 
-
 	}
 
 }
