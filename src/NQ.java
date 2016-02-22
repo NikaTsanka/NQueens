@@ -1,12 +1,7 @@
 /*Citations.
- * Programming Interview: N Queens Problem (Backtracking)
- * https://www.youtube.com/watch?v=p4_QnaTIxkQ
- * 
- * This was a great explanation of the problem.
- * https://developers.google.com/optimization/puzzles/queens
- * 
- * "Introduction to programming in Java by Sedgewick and Wayne"
- * Chapter 2 - Recursions. 
+ * The N Queen is the problem of placing N chess queens on an N×N chessboard
+ * so that no two queens attack each other.
+ * For example, following is a solution for 4 Queen problem.
  */
 
 import java.util.*;
@@ -16,8 +11,8 @@ public class NQ {
 	protected static int numOfSolutins;
 
 	public static void main(String[] args) {
-		
-		
+
+
 
 		int n = 0;
 		int[] boardN = null;
@@ -34,23 +29,23 @@ public class NQ {
 			//We should close this no matter what. Right? :)
 			myScanner.close();
 		}
-		
+
 		long startTime = System.currentTimeMillis();
 
 		//Ok now let's first create a board.
-		//In the array the index will the rows 
-		//And the values will be the placed queens. 
-		//boardN[1] = 3 would mean that the queen is 
+		//In the array the index will the rows
+		//And the values will be the placed queens.
+		//boardN[1] = 3 would mean that the queen is
 		//2nd row and 3rd column.
 		boardN = new int[n];
 
 		placeQ(boardN, 0);
-		
-		System.out.println("Total number of solutions: " + 
+
+		System.out.println("Total number of solutions: " +
 							numOfSolutins);
-		
+
 		long estimatedTime = System.currentTimeMillis() - startTime;
-		
+
 		//To convert to seconds divide by 1'000'000'000.
 		System.out.println("Time: " + estimatedTime + " nanoseconds");
 	}
@@ -96,7 +91,7 @@ public class NQ {
 		return true;
 	}
 	public static void printResult(int[] arrN) {
-		//This method is pretty straight forward. 
+		//This method is pretty straight forward.
 		for (int i = 0; i < arrN.length; i++) {
 			for (int j = 0; j < arrN.length; j++) {
 				if (arrN[i] == j) {
